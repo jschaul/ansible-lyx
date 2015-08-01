@@ -1,0 +1,6 @@
+---
+- name: local.yml
+  hosts: localhost
+  connection: local
+  roles:
+    - "../ansible-lyx"

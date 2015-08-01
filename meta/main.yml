@@ -1,0 +1,38 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  author: joe
+  description: 'Ansible role to install LyX (and related tex packages)'
+  company: 
+  license: MIT
+  min_ansible_version: '1.7.1'
+  platforms:
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+    - name: Debian
+      versions:
+        - wheezy
+        - jessie
+  categories: []
+
+ansigenome_info:
+  galaxy_id: ''
+
+  travis: True
+
+  synopsis: |
+    Installs latest LyX and texlive on ubuntu-based systems with a lot of extra packages. Use if you don't care about the extra disk space used but wish to just use LyX without having to hunt for dependencies manually.
+
+  usage: |
+    ```
+    git clone https://github.com/jschaul/ansible-lyx.git
+    cd ansible-lyx
+    ansible-playbook -K lyx_local.yml
+    ```
+
+  #custom: |
+  #  Any custom output you want after the usage section...

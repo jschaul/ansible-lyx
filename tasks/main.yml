@@ -1,0 +1,19 @@
+---
+
+- name: APT | add repo
+  sudo: true
+  apt_repository:
+    repo: "ppa:lyx-devel/release"
+    state: present
+    update_cache: yes
+  ignore_errors: yes
+
+- name: APT | add packages (may take some time!)
+  sudo: true
+  apt:
+    pkg: "{{ item }}"
+    state: present
+  with_items: lyx_apt_packages
+  notify: "reconfigure lyx"
+
+

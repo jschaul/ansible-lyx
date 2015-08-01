@@ -1,0 +1,11 @@
+---
+
+#!/bin/bash
+
+# test: Test lyx
+# Copyright (C) 2015 jschaul <joe.schaul@gmail.com>
+
+. "lib/test"
+
+assert_playbook_runs
+assert_playbook_idempotent

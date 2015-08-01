@@ -1,0 +1,6 @@
+---
+
+- name: "reconfigure lyx"
+  shell: "{{ lyx_configure_script }}"
+  args:
+    chdir: "{{ lyx_home_dir }}"

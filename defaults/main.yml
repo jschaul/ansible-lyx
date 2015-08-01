@@ -1,0 +1,42 @@
+---
+
+lyx_lib_dir: "/usr/share/lyx"
+lyx_configure_script: "{{ lyx_lib_dir }}/configure.py"
+
+lyx_home_dir: "{{ ansible_user_dir }}/.lyx"
+
+lyx_apt_packages	:
+ - lyx
+ - lyx-common
+ - rcs
+ - dvipost
+ - groff
+ - libtiff-tools
+ - gnuhtml2latex
+ - wv
+ - chktex
+ - noweb
+ - sgmltools-lite
+ - linuxdoc-tools
+ - writer2latex
+ - latex2rtf
+ - librsvg2-bin
+ - inkscape
+ - texlive-xetex
+ - etoolbox
+ - texlive-luatex
+ - texlive-latex-recommended
+ - texlive-latex-extra
+ - texlive-science
+ - texlive-generic-extra
+ - texlive-fonts-recommended
+ - preview-latex-style
+ - dvipng
+ - psutils
+ - fonts-lyx
+ - elyxer
+ - tex4ht
+ - hevea
+ - tth
+ - latex2html
+ - texlive-full
