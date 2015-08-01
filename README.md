@@ -1,6 +1,6 @@
 ## lyx
 
-[![Travis CI](http://img.shields.io/travis/jschaul/ansible-lyx.svg?style=flat)](http://travis-ci.org/jschaul/ansible-lyx)  [![Platforms](http://img.shields.io/badge/platforms-debian%20/%20ubuntu-lightgrey.svg?style=flat)](#)
+[![Travis CI](http://img.shields.io/travis/jschaul/ansible-lyx.svg?style=flat)](http://travis-ci.org/jschaul/ansible-lyx)  [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
 Installs latest LyX and texlive on ubuntu-based systems with a lot of extra packages. Use if you don't care about the extra disk space used but wish to just use LyX without having to hunt for dependencies manually.
 
@@ -57,7 +57,7 @@ List of default variables available in the inventory:
 
 ### Detailed usage guide
 
-```
+```bash
 git clone https://github.com/jschaul/ansible-lyx.git
 cd ansible-lyx
 ansible-playbook -K lyx_local.yml
