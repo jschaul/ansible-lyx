@@ -1,5 +1,5 @@
 ---
-- name: local.yml
+- name: "lyx_local.yml"
   hosts: localhost
   connection: local
   roles:
